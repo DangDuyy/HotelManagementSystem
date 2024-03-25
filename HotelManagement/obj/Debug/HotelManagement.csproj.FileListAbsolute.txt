@@ -35,3 +35,16 @@ C:\Users\Admin\Downloads\HotelManagement\HotelManagement\obj\Debug\HotelManageme
 C:\Users\Admin\Downloads\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Downloads\HotelManagement\HotelManagement\obj\Debug\HotelManagement.exe
 C:\Users\Admin\Downloads\HotelManagement\HotelManagement\obj\Debug\HotelManagement.pdb
+C:\fit23-hk2\WINDOW\Project\HotelSystem\HotelManagement\bin\Debug\HotelManagement.exe.config
+C:\fit23-hk2\WINDOW\Project\HotelSystem\HotelManagement\bin\Debug\HotelManagement.exe
+C:\fit23-hk2\WINDOW\Project\HotelSystem\HotelManagement\bin\Debug\HotelManagement.pdb
+C:\fit23-hk2\WINDOW\Project\HotelSystem\HotelManagement\obj\Debug\HotelManagement.csproj.AssemblyReference.cache
+C:\fit23-hk2\WINDOW\Project\HotelSystem\HotelManagement\obj\Debug\HotelManagement.AddEmployee.resources
+C:\fit23-hk2\WINDOW\Project\HotelSystem\HotelManagement\obj\Debug\HotelManagement.Login_Form.resources
+C:\fit23-hk2\WINDOW\Project\HotelSystem\HotelManagement\obj\Debug\HotelManagement.MainForm.resources
+C:\fit23-hk2\WINDOW\Project\HotelSystem\HotelManagement\obj\Debug\HotelManagement.Properties.Resources.resources
+C:\fit23-hk2\WINDOW\Project\HotelSystem\HotelManagement\obj\Debug\HotelManagement.UpdateEmployeeForm.resources
+C:\fit23-hk2\WINDOW\Project\HotelSystem\HotelManagement\obj\Debug\HotelManagement.csproj.GenerateResource.cache
+C:\fit23-hk2\WINDOW\Project\HotelSystem\HotelManagement\obj\Debug\HotelManagement.csproj.CoreCompileInputs.cache
+C:\fit23-hk2\WINDOW\Project\HotelSystem\HotelManagement\obj\Debug\HotelManagement.exe
+C:\fit23-hk2\WINDOW\Project\HotelSystem\HotelManagement\obj\Debug\HotelManagement.pdb

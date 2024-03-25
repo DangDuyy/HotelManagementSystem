@@ -78,7 +78,7 @@
             // pictureBoxShow
             // 
             this.pictureBoxShow.Image = global::HotelManagement.Properties.Resources.eye__1_;
-            this.pictureBoxShow.Location = new System.Drawing.Point(464, 253);
+            this.pictureBoxShow.Location = new System.Drawing.Point(455, 237);
             this.pictureBoxShow.Name = "pictureBoxShow";
             this.pictureBoxShow.Size = new System.Drawing.Size(42, 28);
             this.pictureBoxShow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -90,7 +90,7 @@
             // pictureBoxHide
             // 
             this.pictureBoxHide.Image = global::HotelManagement.Properties.Resources.eye;
-            this.pictureBoxHide.Location = new System.Drawing.Point(464, 253);
+            this.pictureBoxHide.Location = new System.Drawing.Point(455, 237);
             this.pictureBoxHide.Name = "pictureBoxHide";
             this.pictureBoxHide.Size = new System.Drawing.Size(42, 28);
             this.pictureBoxHide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -115,34 +115,34 @@
             this.label_Forgetpass.AutoSize = true;
             this.label_Forgetpass.Font = new System.Drawing.Font("Century Gothic", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Forgetpass.ForeColor = System.Drawing.Color.Brown;
-            this.label_Forgetpass.Location = new System.Drawing.Point(265, 297);
+            this.label_Forgetpass.Location = new System.Drawing.Point(344, 293);
             this.label_Forgetpass.Name = "label_Forgetpass";
-            this.label_Forgetpass.Size = new System.Drawing.Size(250, 34);
+            this.label_Forgetpass.Size = new System.Drawing.Size(153, 19);
             this.label_Forgetpass.TabIndex = 6;
             this.label_Forgetpass.Text = "Forget password?";
             // 
             // Txt_Password
             // 
-            this.Txt_Password.Location = new System.Drawing.Point(76, 240);
+            this.Txt_Password.Location = new System.Drawing.Point(70, 237);
             this.Txt_Password.Name = "Txt_Password";
-            this.Txt_Password.Size = new System.Drawing.Size(365, 41);
+            this.Txt_Password.Size = new System.Drawing.Size(371, 28);
             this.Txt_Password.TabIndex = 5;
             // 
             // txt_Username
             // 
             this.txt_Username.Location = new System.Drawing.Point(70, 125);
             this.txt_Username.Name = "txt_Username";
-            this.txt_Username.Size = new System.Drawing.Size(371, 41);
+            this.txt_Username.Size = new System.Drawing.Size(427, 28);
             this.txt_Username.TabIndex = 4;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(70, 198);
+            this.label2.Location = new System.Drawing.Point(66, 199);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(148, 34);
+            this.label2.Size = new System.Drawing.Size(92, 19);
             this.label2.TabIndex = 3;
             this.label2.Text = "Password:";
             // 
@@ -150,10 +150,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(59, 75);
+            this.label1.Location = new System.Drawing.Point(66, 83);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(159, 34);
+            this.label1.Size = new System.Drawing.Size(96, 19);
             this.label1.TabIndex = 2;
             this.label1.Text = "Username:";
             // 
@@ -164,7 +164,7 @@
             this.label4.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.label4.Location = new System.Drawing.Point(233, 24);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(1033, 90);
+            this.label4.Size = new System.Drawing.Size(636, 56);
             this.label4.TabIndex = 5;
             this.label4.Text = "Hotel Management System";
             // 
@@ -213,7 +213,7 @@
             // 
             // Login_Form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 33F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1431, 843);
