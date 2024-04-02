@@ -31,8 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.LOGIN = new System.Windows.Forms.GroupBox();
-            this.pictureBoxShow = new System.Windows.Forms.PictureBox();
-            this.pictureBoxHide = new System.Windows.Forms.PictureBox();
             this.btn_Login = new System.Windows.Forms.Button();
             this.label_Forgetpass = new System.Windows.Forms.Label();
             this.Txt_Password = new System.Windows.Forms.TextBox();
@@ -42,13 +40,15 @@
             this.label4 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxShow = new System.Windows.Forms.PictureBox();
+            this.pictureBoxHide = new System.Windows.Forms.PictureBox();
             this.pictureBoxMinimize = new System.Windows.Forms.PictureBox();
             this.pictureBoxClose = new System.Windows.Forms.PictureBox();
             this.LOGIN.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShow)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHide)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHide)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).BeginInit();
             this.SuspendLayout();
@@ -74,30 +74,6 @@
             this.LOGIN.TabStop = false;
             this.LOGIN.Text = "LOGIN";
             this.LOGIN.Enter += new System.EventHandler(this.LOGIN_Enter);
-            // 
-            // pictureBoxShow
-            // 
-            this.pictureBoxShow.Image = global::HotelManagement.Properties.Resources.eye__1_;
-            this.pictureBoxShow.Location = new System.Drawing.Point(455, 237);
-            this.pictureBoxShow.Name = "pictureBoxShow";
-            this.pictureBoxShow.Size = new System.Drawing.Size(42, 28);
-            this.pictureBoxShow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxShow.TabIndex = 9;
-            this.pictureBoxShow.TabStop = false;
-            this.pictureBoxShow.Click += new System.EventHandler(this.pictureBoxShow_Click);
-            this.pictureBoxShow.MouseHover += new System.EventHandler(this.pictureBoxShow_MouseHover);
-            // 
-            // pictureBoxHide
-            // 
-            this.pictureBoxHide.Image = global::HotelManagement.Properties.Resources.eye;
-            this.pictureBoxHide.Location = new System.Drawing.Point(455, 237);
-            this.pictureBoxHide.Name = "pictureBoxHide";
-            this.pictureBoxHide.Size = new System.Drawing.Size(42, 28);
-            this.pictureBoxHide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxHide.TabIndex = 8;
-            this.pictureBoxHide.TabStop = false;
-            this.pictureBoxHide.Click += new System.EventHandler(this.pictureBoxHide_Click);
-            this.pictureBoxHide.MouseHover += new System.EventHandler(this.pictureBoxHide_MouseHover);
             // 
             // btn_Login
             // 
@@ -160,11 +136,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label4.Location = new System.Drawing.Point(233, 24);
+            this.label4.Location = new System.Drawing.Point(334, 78);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(636, 56);
+            this.label4.Size = new System.Drawing.Size(813, 70);
             this.label4.TabIndex = 5;
             this.label4.Text = "Hotel Management System";
             // 
@@ -181,6 +157,30 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
+            // 
+            // pictureBoxShow
+            // 
+            this.pictureBoxShow.Image = global::HotelManagement.Properties.Resources.eye__1_;
+            this.pictureBoxShow.Location = new System.Drawing.Point(455, 237);
+            this.pictureBoxShow.Name = "pictureBoxShow";
+            this.pictureBoxShow.Size = new System.Drawing.Size(42, 28);
+            this.pictureBoxShow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxShow.TabIndex = 9;
+            this.pictureBoxShow.TabStop = false;
+            this.pictureBoxShow.Click += new System.EventHandler(this.pictureBoxShow_Click);
+            this.pictureBoxShow.MouseHover += new System.EventHandler(this.pictureBoxShow_MouseHover);
+            // 
+            // pictureBoxHide
+            // 
+            this.pictureBoxHide.Image = global::HotelManagement.Properties.Resources.eye;
+            this.pictureBoxHide.Location = new System.Drawing.Point(455, 237);
+            this.pictureBoxHide.Name = "pictureBoxHide";
+            this.pictureBoxHide.Size = new System.Drawing.Size(42, 28);
+            this.pictureBoxHide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxHide.TabIndex = 8;
+            this.pictureBoxHide.TabStop = false;
+            this.pictureBoxHide.Click += new System.EventHandler(this.pictureBoxHide_Click);
+            this.pictureBoxHide.MouseHover += new System.EventHandler(this.pictureBoxHide_MouseHover);
             // 
             // pictureBoxMinimize
             // 
@@ -231,10 +231,10 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.LOGIN.ResumeLayout(false);
             this.LOGIN.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShow)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHide)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHide)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMinimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).EndInit();
             this.ResumeLayout(false);
