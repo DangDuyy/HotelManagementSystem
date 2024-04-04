@@ -49,3 +49,4 @@ C:\fit23-hk2\WINDOW\Project\HotelSystem\HotelManagement\obj\Debug\HotelManagemen
 C:\fit23-hk2\WINDOW\Project\HotelSystem\HotelManagement\obj\Debug\HotelManagement.exe
 C:\fit23-hk2\WINDOW\Project\HotelSystem\HotelManagement\obj\Debug\HotelManagement.pdb
 C:\fit23-hk2\WINDOW\Project\HotelSystem\HotelManagement\obj\Debug\HotelManagement.CustomerForm.resources
+C:\fit23-hk2\WINDOW\Project\HotelSystem\HotelManagement\obj\Debug\HotelManagement.EmployeeForm.resources
