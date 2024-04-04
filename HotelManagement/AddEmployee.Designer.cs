@@ -50,11 +50,9 @@
             this.txt_Fname = new System.Windows.Forms.TextBox();
             this.Label1 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pic_Employee = new System.Windows.Forms.PictureBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.pic_Employee = new System.Windows.Forms.PictureBox();
             this.GroupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Employee)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,7 +61,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label9.Location = new System.Drawing.Point(354, 70);
+            this.label9.Location = new System.Drawing.Point(688, 88);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(315, 51);
             this.label9.TabIndex = 58;
@@ -95,7 +93,7 @@
             this.GroupBox1.Controls.Add(this.RadioButtonFemale);
             this.GroupBox1.Controls.Add(this.RadioButtonMale);
             this.GroupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GroupBox1.Location = new System.Drawing.Point(312, 570);
+            this.GroupBox1.Location = new System.Drawing.Point(308, 574);
             this.GroupBox1.Margin = new System.Windows.Forms.Padding(6);
             this.GroupBox1.Name = "GroupBox1";
             this.GroupBox1.Padding = new System.Windows.Forms.Padding(6);
@@ -148,7 +146,7 @@
             this.btt_Cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btt_Cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btt_Cancel.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.btt_Cancel.Location = new System.Drawing.Point(121, 1177);
+            this.btt_Cancel.Location = new System.Drawing.Point(491, 772);
             this.btt_Cancel.Margin = new System.Windows.Forms.Padding(6);
             this.btt_Cancel.Name = "btt_Cancel";
             this.btt_Cancel.Size = new System.Drawing.Size(316, 71);
@@ -163,7 +161,7 @@
             this.btt_Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btt_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btt_Add.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.btt_Add.Location = new System.Drawing.Point(534, 1177);
+            this.btt_Add.Location = new System.Drawing.Point(904, 772);
             this.btt_Add.Margin = new System.Windows.Forms.Padding(6);
             this.btt_Add.Name = "btt_Add";
             this.btt_Add.Size = new System.Drawing.Size(316, 71);
@@ -175,7 +173,7 @@
             // btt_UploadImage
             // 
             this.btt_UploadImage.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.btt_UploadImage.Location = new System.Drawing.Point(308, 1082);
+            this.btt_UploadImage.Location = new System.Drawing.Point(1068, 644);
             this.btt_UploadImage.Margin = new System.Windows.Forms.Padding(6);
             this.btt_UploadImage.Name = "btt_UploadImage";
             this.btt_UploadImage.Size = new System.Drawing.Size(478, 45);
@@ -189,7 +187,7 @@
             this.Label6.AutoSize = true;
             this.Label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label6.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.Label6.Location = new System.Drawing.Point(128, 855);
+            this.Label6.Location = new System.Drawing.Point(888, 418);
             this.Label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.Label6.Name = "Label6";
             this.Label6.Size = new System.Drawing.Size(115, 31);
@@ -199,7 +197,7 @@
             // txt_Address
             // 
             this.txt_Address.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Address.Location = new System.Drawing.Point(308, 750);
+            this.txt_Address.Location = new System.Drawing.Point(1068, 313);
             this.txt_Address.Margin = new System.Windows.Forms.Padding(6);
             this.txt_Address.Multiline = true;
             this.txt_Address.Name = "txt_Address";
@@ -211,7 +209,7 @@
             this.Label5.AutoSize = true;
             this.Label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label5.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.Label5.Location = new System.Drawing.Point(104, 750);
+            this.Label5.Location = new System.Drawing.Point(864, 313);
             this.Label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.Label5.Name = "Label5";
             this.Label5.Size = new System.Drawing.Size(130, 31);
@@ -221,7 +219,7 @@
             // txt_Phone
             // 
             this.txt_Phone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Phone.Location = new System.Drawing.Point(308, 678);
+            this.txt_Phone.Location = new System.Drawing.Point(1068, 241);
             this.txt_Phone.Margin = new System.Windows.Forms.Padding(6);
             this.txt_Phone.Name = "txt_Phone";
             this.txt_Phone.Size = new System.Drawing.Size(466, 44);
@@ -232,7 +230,7 @@
             this.Label4.AutoSize = true;
             this.Label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label4.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.Label4.Location = new System.Drawing.Point(137, 678);
+            this.Label4.Location = new System.Drawing.Point(897, 241);
             this.Label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.Label4.Name = "Label4";
             this.Label4.Size = new System.Drawing.Size(106, 31);
@@ -315,27 +313,6 @@
             this.label11.TabIndex = 60;
             this.label11.Text = "Position:";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::HotelManagement.Properties.Resources._258768692_5086046671424593_4224393960284543308_n1;
-            this.pictureBox1.Location = new System.Drawing.Point(51, 31);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(147, 131);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 57;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pic_Employee
-            // 
-            this.pic_Employee.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.pic_Employee.Location = new System.Drawing.Point(312, 855);
-            this.pic_Employee.Margin = new System.Windows.Forms.Padding(6);
-            this.pic_Employee.Name = "pic_Employee";
-            this.pic_Employee.Size = new System.Drawing.Size(474, 215);
-            this.pic_Employee.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pic_Employee.TabIndex = 49;
-            this.pic_Employee.TabStop = false;
-            // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
@@ -346,15 +323,25 @@
             this.listBox1.TabIndex = 62;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
+            // pic_Employee
+            // 
+            this.pic_Employee.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.pic_Employee.Location = new System.Drawing.Point(1068, 418);
+            this.pic_Employee.Margin = new System.Windows.Forms.Padding(6);
+            this.pic_Employee.Name = "pic_Employee";
+            this.pic_Employee.Size = new System.Drawing.Size(466, 198);
+            this.pic_Employee.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_Employee.TabIndex = 49;
+            this.pic_Employee.TabStop = false;
+            // 
             // AddEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(925, 1288);
+            this.ClientSize = new System.Drawing.Size(1628, 959);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txt_EmployeeID);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.GroupBox1);
@@ -376,10 +363,10 @@
             this.Controls.Add(this.Label1);
             this.Name = "AddEmployee";
             this.Text = "AddEmployee";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.AddEmployee_Load);
             this.GroupBox1.ResumeLayout(false);
             this.GroupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Employee)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -389,7 +376,6 @@
         #endregion
 
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txt_EmployeeID;
         private System.Windows.Forms.Label label8;
         internal System.Windows.Forms.GroupBox GroupBox1;

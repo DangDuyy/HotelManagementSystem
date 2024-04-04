@@ -83,6 +83,26 @@ namespace HotelManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _258768692_5086046671424593_4224393960284543308_n2 {
+            get {
+                object obj = ResourceManager.GetObject("258768692_5086046671424593_4224393960284543308_n2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _258768692_5086046671424593_4224393960284543308_n3 {
+            get {
+                object obj = ResourceManager.GetObject("258768692_5086046671424593_4224393960284543308_n3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _556de6817e74a92a52e45c88_width_1440_V0RXl5LaVGiGPQAr {
             get {
                 object obj = ResourceManager.GetObject("556de6817e74a92a52e45c88.width-1440_V0RXl5LaVGiGPQAr", resourceCulture);

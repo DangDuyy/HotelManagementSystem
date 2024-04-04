@@ -52,95 +52,87 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Face)).BeginInit();
             this.SuspendLayout();
             // 
             // ButtonFindPhone
             // 
-            this.ButtonFindPhone.Location = new System.Drawing.Point(550, 580);
+            this.ButtonFindPhone.Location = new System.Drawing.Point(631, 662);
             this.ButtonFindPhone.Name = "ButtonFindPhone";
-            this.ButtonFindPhone.Size = new System.Drawing.Size(114, 40);
+            this.ButtonFindPhone.Size = new System.Drawing.Size(129, 43);
             this.ButtonFindPhone.TabIndex = 53;
             this.ButtonFindPhone.Text = "Find";
             this.ButtonFindPhone.UseVisualStyleBackColor = true;
-            //this.ButtonFindPhone.Click += new System.EventHandler(this.ButtonFindPhone_Click);
             // 
             // buttonFindFname
             // 
-            this.buttonFindFname.Location = new System.Drawing.Point(550, 232);
+            this.buttonFindFname.Location = new System.Drawing.Point(661, 314);
             this.buttonFindFname.Name = "buttonFindFname";
-            this.buttonFindFname.Size = new System.Drawing.Size(114, 40);
+            this.buttonFindFname.Size = new System.Drawing.Size(129, 43);
             this.buttonFindFname.TabIndex = 52;
             this.buttonFindFname.Text = "Find";
             this.buttonFindFname.UseVisualStyleBackColor = true;
-           // this.buttonFindFname.Click += new System.EventHandler(this.buttonFindFname_Click);
             // 
             // ButtonUploadImage
             // 
-            this.ButtonUploadImage.Location = new System.Drawing.Point(960, 645);
+            this.ButtonUploadImage.Location = new System.Drawing.Point(1005, 662);
             this.ButtonUploadImage.Name = "ButtonUploadImage";
-            this.ButtonUploadImage.Size = new System.Drawing.Size(295, 40);
+            this.ButtonUploadImage.Size = new System.Drawing.Size(310, 43);
             this.ButtonUploadImage.TabIndex = 51;
             this.ButtonUploadImage.Text = "Upload Image";
             this.ButtonUploadImage.UseVisualStyleBackColor = true;
-           //this.ButtonUploadImage.Click += new System.EventHandler(this.ButtonUploadImage_Click);
             // 
             // textBoxID
             // 
-            this.textBoxID.Location = new System.Drawing.Point(261, 173);
+            this.textBoxID.Location = new System.Drawing.Point(342, 255);
             this.textBoxID.Name = "textBoxID";
-            this.textBoxID.Size = new System.Drawing.Size(263, 31);
+            this.textBoxID.Size = new System.Drawing.Size(278, 31);
             this.textBoxID.TabIndex = 50;
-           // this.textBoxID.TextChanged += new System.EventHandler(this.textBoxID_TextChanged);
             // 
             // pic_Face
             // 
-            this.pic_Face.Location = new System.Drawing.Point(960, 441);
+            this.pic_Face.Location = new System.Drawing.Point(1005, 458);
             this.pic_Face.Name = "pic_Face";
-            this.pic_Face.Size = new System.Drawing.Size(295, 182);
+            this.pic_Face.Size = new System.Drawing.Size(310, 185);
             this.pic_Face.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pic_Face.TabIndex = 49;
             this.pic_Face.TabStop = false;
-           // this.pic_Face.Click += new System.EventHandler(this.pic_Face_Click);
             // 
             // TexBoxAddress
             // 
-            this.TexBoxAddress.Location = new System.Drawing.Point(1008, 255);
+            this.TexBoxAddress.Location = new System.Drawing.Point(1053, 272);
             this.TexBoxAddress.Name = "TexBoxAddress";
-            this.TexBoxAddress.Size = new System.Drawing.Size(235, 31);
+            this.TexBoxAddress.Size = new System.Drawing.Size(250, 31);
             this.TexBoxAddress.TabIndex = 48;
-            //this.TexBoxAddress.TextChanged += new System.EventHandler(this.TexBoxAddress_TextChanged);
             // 
             // RadioButtonFemale
             // 
             this.RadioButtonFemale.AutoSize = true;
             this.RadioButtonFemale.Checked = true;
-            this.RadioButtonFemale.Location = new System.Drawing.Point(396, 512);
+            this.RadioButtonFemale.Location = new System.Drawing.Point(477, 594);
             this.RadioButtonFemale.Name = "RadioButtonFemale";
             this.RadioButtonFemale.Size = new System.Drawing.Size(114, 29);
             this.RadioButtonFemale.TabIndex = 47;
             this.RadioButtonFemale.TabStop = true;
             this.RadioButtonFemale.Text = "Female";
             this.RadioButtonFemale.UseVisualStyleBackColor = true;
-            //this.RadioButtonFemale.CheckedChanged += new System.EventHandler(this.RadioButtonFemale_CheckedChanged);
             // 
             // RadioButtonMale
             // 
             this.RadioButtonMale.AutoSize = true;
-            this.RadioButtonMale.Location = new System.Drawing.Point(261, 512);
+            this.RadioButtonMale.Location = new System.Drawing.Point(342, 594);
             this.RadioButtonMale.Name = "RadioButtonMale";
             this.RadioButtonMale.Size = new System.Drawing.Size(90, 29);
             this.RadioButtonMale.TabIndex = 46;
             this.RadioButtonMale.Text = "Male";
             this.RadioButtonMale.UseVisualStyleBackColor = true;
-           // this.RadioButtonMale.CheckedChanged += new System.EventHandler(this.RadioButtonMale_CheckedChanged);
             // 
             // ButtonRemove
             // 
-            this.ButtonRemove.Location = new System.Drawing.Point(675, 703);
+            this.ButtonRemove.Location = new System.Drawing.Point(777, 762);
             this.ButtonRemove.Name = "ButtonRemove";
-            this.ButtonRemove.Size = new System.Drawing.Size(243, 70);
+            this.ButtonRemove.Size = new System.Drawing.Size(258, 73);
             this.ButtonRemove.TabIndex = 45;
             this.ButtonRemove.Text = "Remove";
             this.ButtonRemove.UseVisualStyleBackColor = true;
@@ -148,9 +140,9 @@
             // 
             // ButtonEdit
             // 
-            this.ButtonEdit.Location = new System.Drawing.Point(385, 703);
+            this.ButtonEdit.Location = new System.Drawing.Point(487, 762);
             this.ButtonEdit.Name = "ButtonEdit";
-            this.ButtonEdit.Size = new System.Drawing.Size(227, 70);
+            this.ButtonEdit.Size = new System.Drawing.Size(242, 73);
             this.ButtonEdit.TabIndex = 44;
             this.ButtonEdit.Text = "Edit";
             this.ButtonEdit.UseVisualStyleBackColor = true;
@@ -158,25 +150,23 @@
             // 
             // TextBoxPhone
             // 
-            this.TextBoxPhone.Location = new System.Drawing.Point(261, 589);
+            this.TextBoxPhone.Location = new System.Drawing.Point(342, 671);
             this.TextBoxPhone.Name = "TextBoxPhone";
-            this.TextBoxPhone.Size = new System.Drawing.Size(263, 31);
+            this.TextBoxPhone.Size = new System.Drawing.Size(278, 31);
             this.TextBoxPhone.TabIndex = 43;
-            //this.TextBoxPhone.TextChanged += new System.EventHandler(this.TextBoxPhone_TextChanged);
             // 
             // DateTimePicker1
             // 
-            this.DateTimePicker1.Location = new System.Drawing.Point(261, 438);
+            this.DateTimePicker1.Location = new System.Drawing.Point(342, 520);
             this.DateTimePicker1.Name = "DateTimePicker1";
-            this.DateTimePicker1.Size = new System.Drawing.Size(268, 31);
+            this.DateTimePicker1.Size = new System.Drawing.Size(283, 31);
             this.DateTimePicker1.TabIndex = 42;
-           // this.DateTimePicker1.ValueChanged += new System.EventHandler(this.DateTimePicker1_ValueChanged);
             // 
             // buttonFind
             // 
-            this.buttonFind.Location = new System.Drawing.Point(550, 168);
+            this.buttonFind.Location = new System.Drawing.Point(661, 249);
             this.buttonFind.Name = "buttonFind";
-            this.buttonFind.Size = new System.Drawing.Size(114, 40);
+            this.buttonFind.Size = new System.Drawing.Size(129, 43);
             this.buttonFind.TabIndex = 41;
             this.buttonFind.Text = "Find";
             this.buttonFind.UseVisualStyleBackColor = true;
@@ -184,127 +174,115 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(762, 437);
+            this.button8.Location = new System.Drawing.Point(807, 454);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(156, 42);
+            this.button8.Size = new System.Drawing.Size(171, 45);
             this.button8.TabIndex = 40;
             this.button8.Text = "Picture";
             this.button8.UseVisualStyleBackColor = true;
-          //  this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(41, 586);
+            this.button7.Location = new System.Drawing.Point(122, 671);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(149, 37);
+            this.button7.Size = new System.Drawing.Size(164, 40);
             this.button7.TabIndex = 39;
             this.button7.Text = "Phone";
             this.button7.UseVisualStyleBackColor = true;
-        //    this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(769, 246);
+            this.button6.Location = new System.Drawing.Point(814, 263);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(150, 40);
+            this.button6.Size = new System.Drawing.Size(165, 43);
             this.button6.TabIndex = 38;
             this.button6.Text = "Address";
             this.button6.UseVisualStyleBackColor = true;
-            //this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // TextBoxLname
             // 
-            this.TextBoxLname.Location = new System.Drawing.Point(261, 293);
+            this.TextBoxLname.Location = new System.Drawing.Point(342, 375);
             this.TextBoxLname.Name = "TextBoxLname";
-            this.TextBoxLname.Size = new System.Drawing.Size(263, 31);
+            this.TextBoxLname.Size = new System.Drawing.Size(278, 31);
             this.TextBoxLname.TabIndex = 37;
-            //this.TextBoxLname.TextChanged += new System.EventHandler(this.TextBoxLname_TextChanged);
             // 
             // TextBoxFname
             // 
-            this.TextBoxFname.Location = new System.Drawing.Point(261, 238);
+            this.TextBoxFname.Location = new System.Drawing.Point(342, 320);
             this.TextBoxFname.Name = "TextBoxFname";
-            this.TextBoxFname.Size = new System.Drawing.Size(263, 31);
+            this.TextBoxFname.Size = new System.Drawing.Size(278, 31);
             this.TextBoxFname.TabIndex = 36;
-          //  this.TextBoxFname.TextChanged += new System.EventHandler(this.TextBoxFname_TextChanged);
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(41, 515);
+            this.button5.Location = new System.Drawing.Point(122, 597);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(149, 36);
+            this.button5.Size = new System.Drawing.Size(164, 39);
             this.button5.TabIndex = 35;
             this.button5.Text = "Gender";
             this.button5.UseVisualStyleBackColor = true;
-        //    this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(41, 440);
+            this.button4.Location = new System.Drawing.Point(122, 522);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(149, 36);
+            this.button4.Size = new System.Drawing.Size(164, 39);
             this.button4.TabIndex = 34;
             this.button4.Text = "Birth Date";
             this.button4.UseVisualStyleBackColor = true;
-          //  this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(41, 296);
+            this.button3.Location = new System.Drawing.Point(122, 378);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(149, 39);
+            this.button3.Size = new System.Drawing.Size(164, 42);
             this.button3.TabIndex = 33;
             this.button3.Text = "Last Name";
             this.button3.UseVisualStyleBackColor = true;
-         //   this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(41, 235);
+            this.button2.Location = new System.Drawing.Point(122, 317);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(149, 37);
+            this.button2.Size = new System.Drawing.Size(164, 40);
             this.button2.TabIndex = 32;
             this.button2.Text = "First Name";
             this.button2.UseVisualStyleBackColor = true;
-         //   this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(41, 171);
+            this.button1.Location = new System.Drawing.Point(122, 253);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(149, 40);
+            this.button1.Size = new System.Drawing.Size(164, 43);
             this.button1.TabIndex = 31;
             this.button1.Text = "ID";
             this.button1.UseVisualStyleBackColor = true;
-         //   this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(41, 367);
+            this.button9.Location = new System.Drawing.Point(122, 449);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(149, 39);
+            this.button9.Size = new System.Drawing.Size(164, 42);
             this.button9.TabIndex = 54;
             this.button9.Text = "Position";
             this.button9.UseVisualStyleBackColor = true;
-         //   this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
-            // listBox1
+            // comboBox1
             // 
-            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 25;
-            this.listBox1.Location = new System.Drawing.Point(261, 367);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(263, 29);
-            this.listBox1.TabIndex = 63;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(342, 449);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(283, 33);
+            this.comboBox1.TabIndex = 55;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // UpdateEmployeeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1284, 803);
-            this.Controls.Add(this.listBox1);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.ClientSize = new System.Drawing.Size(1570, 1204);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.ButtonFindPhone);
             this.Controls.Add(this.buttonFindFname);
@@ -331,6 +309,7 @@
             this.Controls.Add(this.button1);
             this.Name = "UpdateEmployeeForm";
             this.Text = "UpdateEmployeeForm";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.UpdateEmployeeForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pic_Face)).EndInit();
             this.ResumeLayout(false);
@@ -364,6 +343,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

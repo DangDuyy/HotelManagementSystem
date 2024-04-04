@@ -21,26 +21,18 @@ namespace HotelManagement
         Employee em = new Employee();
         private void UpdateEmployeeForm_Load(object sender, EventArgs e)
         {
-            listBox1.Items.Add("Receptionist");
-            listBox1.Items.Add("Labourer");
-            listBox1.Items.Add("Manager");
+            comboBox1.Items.Add("Labourer");
+            comboBox1.Items.Add("Receptionist");
+            comboBox1.Items.Add("Manager");
             //listBox1.SelectedIndexChanged += new EventHandler(listBox1_SelectedIndexChanged);
         }
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (listBox1.SelectedIndex != -1) // Kiểm tra xem có mục nào được chọn không
-            {
-                string selectedValue = listBox1.SelectedItem.ToString(); // Lấy giá trị của mục được chọn
-                                                                         // Sử dụng giá trị selectedValue ở đây hoặc gán cho biến khác
-                MessageBox.Show("Bạn đã chọn: " + selectedValue); // Hiển thị giá trị đã chọn
-            }
-        }
+        
         private void ButtonEdit_Click(object sender, EventArgs e)
         {
             int id;
             string fname = TextBoxFname.Text;
             string lname = TextBoxLname.Text;
-            string position = listBox1.Text;
+            string position = comboBox1.Text;
             DateTime bdate = DateTimePicker1.Value;
             string phone = TextBoxPhone.Text;
             string adrs = TexBoxAddress.Text;
@@ -138,7 +130,7 @@ namespace HotelManagement
                         TextBoxFname.Text = "";
                         TextBoxLname.Text = "";
                         TexBoxAddress.Text = "";
-                        listBox1.Text = "";
+                        comboBox1.Text = "";
                         TextBoxPhone.Text = "";
                         DateTimePicker1.Value = DateTime.Now;
                         pic_Face.Image = null;
@@ -172,12 +164,18 @@ namespace HotelManagement
                 {
                     TextBoxFname.Text = table.Rows[0]["fname"].ToString();
                     TextBoxLname.Text = table.Rows[0]["lname"].ToString();
-                    string position = table.Rows[0]["position"].ToString();
 
-                    // Tìm vị trí của mục trong listBox1 mà có giá trị bằng với 'position'
-                    int index = listBox1.FindStringExact(position);
-                    listBox1.SelectedIndex = index;
-                  
+                    for (int i = 0; i < comboBox1.Items.Count; i++)
+                    {
+                        // So sánh giá trị từ cột "position" của bảng dữ liệu với giá trị của từng phần tử trong ComboBox
+                        if (table.Rows[0]["position"].ToString() == comboBox1.Items[i].ToString())
+                        {
+                            // Nếu có sự khớp, đặt phần tử tương ứng làm phần tử được chọn trong ComboBox
+                            comboBox1.DisplayMember = comboBox1.Items[i].ToString();
+                    break; // Thoát khỏi vòng lặp sau khi tìm thấy sự khớp đầu tiên
+                        }
+                    }
+
                     DateTimePicker1.Value = (DateTime)table.Rows[0]["bdate"];
 
                     if (table.Rows[0]["gender"].ToString().Trim() == "Female")
@@ -204,6 +202,16 @@ namespace HotelManagement
             catch (Exception ex)
             {
                 MessageBox.Show($"Lỗi: {ex.Message}", "Tìm kiếm sinh viên", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedIndex != -1) // Kiểm tra xem có mục nào được chọn không
+            {
+                string selectedValue = comboBox1.SelectedItem.ToString(); // Lấy giá trị của mục được chọn
+                                                                         // Sử dụng giá trị selectedValue ở đây hoặc gán cho biến khác
+                MessageBox.Show("Bạn đã chọn: " + selectedValue); // Hiển thị giá trị đã chọn
             }
         }
     }

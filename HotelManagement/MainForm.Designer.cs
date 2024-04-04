@@ -47,6 +47,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel_above = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -100,7 +101,7 @@
             this.label4.ForeColor = System.Drawing.Color.IndianRed;
             this.label4.Location = new System.Drawing.Point(459, 25);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(636, 56);
+            this.label4.Size = new System.Drawing.Size(1033, 90);
             this.label4.TabIndex = 8;
             this.label4.Text = "Hotel Management System";
             // 
@@ -193,6 +194,7 @@
             this.button5.Text = "  Employee";
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -269,6 +271,7 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(273, 147);
             this.panel4.TabIndex = 11;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // label3
             // 
@@ -276,7 +279,7 @@
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(108, 111);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 17);
+            this.label3.Size = new System.Drawing.Size(76, 25);
             this.label3.TabIndex = 10;
             this.label3.Text = "label3";
             // 
@@ -307,7 +310,7 @@
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(86, 44);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(114, 34);
+            this.label2.Size = new System.Drawing.Size(177, 51);
             this.label2.TabIndex = 9;
             this.label2.Text = "Log out";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -319,6 +322,17 @@
             this.flowLayoutPanel4.Name = "flowLayoutPanel4";
             this.flowLayoutPanel4.Size = new System.Drawing.Size(200, 100);
             this.flowLayoutPanel4.TabIndex = 5;
+            // 
+            // panel_above
+            // 
+            this.panel_above.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel_above.Location = new System.Drawing.Point(273, 153);
+            this.panel_above.Name = "panel_above";
+            this.panel_above.Size = new System.Drawing.Size(1583, 752);
+            this.panel_above.TabIndex = 10;
+            this.panel_above.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_above_Paint);
             // 
             // pictureBox1
             // 
@@ -422,10 +436,11 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1856, 910);
+            this.Controls.Add(this.panel_above);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.flowLayoutPanel5);
@@ -437,6 +452,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -488,6 +504,7 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.Panel panel_above;
     }
 }
 
