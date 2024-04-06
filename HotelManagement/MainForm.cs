@@ -46,29 +46,20 @@ namespace HotelManagement
         }
 
      
-        private void label2_Click(object sender, EventArgs e)
+        private void label_Exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void MainForm_Load(object sender, EventArgs e)
-        {
 
-        }
-
-        private void button5_Click(object sender, EventArgs e)
+        private void btn_Employee_Click(object sender, EventArgs e)
         {
             OpenChildForm(new EmployeeForm());
         }
 
-        private void panel4_Paint(object sender, PaintEventArgs e)
+        private void btn_Admin_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void panel_above_Paint(object sender, PaintEventArgs e)
-        {
-
+            OpenChildForm(new AdminForm());
         }
     }
 }

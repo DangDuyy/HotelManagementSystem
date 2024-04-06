@@ -34,7 +34,7 @@ namespace HotelManagement
             command.Parameters.Add("@phn", SqlDbType.VarChar).Value = phone;
             command.Parameters.Add("@adrs", SqlDbType.VarChar).Value = address;
             command.Parameters.Add("@pic", SqlDbType.Image).Value = picture.ToArray();
-            command.Parameters.Add("@email", SqlDbType.VarChar).Value = Id + "@empploy.hcmute.com";
+            command.Parameters.Add("@email", SqlDbType.VarChar).Value = Id + "@employ.hcmute.com";
 
             mydb.openConnection();
 

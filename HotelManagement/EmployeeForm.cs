@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace HotelManagement
 {
     public partial class EmployeeForm : Form
@@ -42,6 +43,11 @@ namespace HotelManagement
         private void btt_Update_Click(object sender, EventArgs e)
         {
             OpenChildForm(new UpdateEmployeeForm());
+        }
+
+        private void btn_Shift_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new ShiftForm());
         }
     }
 }
