@@ -1,0 +1,86 @@
+C:\fit23-hk2\WINDOW\bt\HotelManagement\HotelManagement\bin\Debug\HotelManagement.exe.config
+C:\fit23-hk2\WINDOW\bt\HotelManagement\HotelManagement\bin\Debug\HotelManagement.exe
+C:\fit23-hk2\WINDOW\bt\HotelManagement\HotelManagement\bin\Debug\HotelManagement.pdb
+C:\fit23-hk2\WINDOW\bt\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.AssemblyReference.cache
+C:\fit23-hk2\WINDOW\bt\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Properties.Resources.resources
+C:\fit23-hk2\WINDOW\bt\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.GenerateResource.cache
+C:\fit23-hk2\WINDOW\bt\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.CoreCompileInputs.cache
+C:\fit23-hk2\WINDOW\bt\HotelManagement\HotelManagement\obj\Debug\HotelManagement.exe
+C:\fit23-hk2\WINDOW\bt\HotelManagement\HotelManagement\obj\Debug\HotelManagement.pdb
+C:\fit23-hk2\WINDOW\bt\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Login_Form.resources
+C:\fit23-hk2\WINDOW\bt\HotelManagement\HotelManagement\obj\Debug\HotelManagement.MainForm.resources
+C:\Users\22110\Documents\Zalo Received Files\HotelManagement\HotelManagement\bin\Debug\HotelManagement.exe.config
+C:\Users\22110\Documents\Zalo Received Files\HotelManagement\HotelManagement\bin\Debug\HotelManagement.exe
+C:\Users\22110\Documents\Zalo Received Files\HotelManagement\HotelManagement\bin\Debug\HotelManagement.pdb
+C:\Users\22110\Documents\Zalo Received Files\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.AssemblyReference.cache
+C:\Users\22110\Documents\Zalo Received Files\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Login_Form.resources
+C:\Users\22110\Documents\Zalo Received Files\HotelManagement\HotelManagement\obj\Debug\HotelManagement.MainForm.resources
+C:\Users\22110\Documents\Zalo Received Files\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Properties.Resources.resources
+C:\Users\22110\Documents\Zalo Received Files\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.GenerateResource.cache
+C:\Users\22110\Documents\Zalo Received Files\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.CoreCompileInputs.cache
+C:\Users\22110\Documents\Zalo Received Files\HotelManagement\HotelManagement\obj\Debug\HotelManagement.exe
+C:\Users\22110\Documents\Zalo Received Files\HotelManagement\HotelManagement\obj\Debug\HotelManagement.pdb
+C:\Users\22110\Documents\Zalo Received Files\HotelManagement\HotelManagement\obj\Debug\HotelManagement.AddEmployee.resources
+C:\Users\22110\Documents\Zalo Received Files\HotelManagement\HotelManagement\obj\Debug\HotelManagement.UpdateEmployeeForm.resources
+C:\Users\Admin\Downloads\HotelManagement\HotelManagement\bin\Debug\HotelManagement.exe.config
+C:\Users\Admin\Downloads\HotelManagement\HotelManagement\bin\Debug\HotelManagement.exe
+C:\Users\Admin\Downloads\HotelManagement\HotelManagement\bin\Debug\HotelManagement.pdb
+C:\Users\Admin\Downloads\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.AssemblyReference.cache
+C:\Users\Admin\Downloads\HotelManagement\HotelManagement\obj\Debug\HotelManagement.AddEmployee.resources
+C:\Users\Admin\Downloads\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Login_Form.resources
+C:\Users\Admin\Downloads\HotelManagement\HotelManagement\obj\Debug\HotelManagement.MainForm.resources
+C:\Users\Admin\Downloads\HotelManagement\HotelManagement\obj\Debug\HotelManagement.Properties.Resources.resources
+C:\Users\Admin\Downloads\HotelManagement\HotelManagement\obj\Debug\HotelManagement.UpdateEmployeeForm.resources
+C:\Users\Admin\Downloads\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.GenerateResource.cache
+C:\Users\Admin\Downloads\HotelManagement\HotelManagement\obj\Debug\HotelManagement.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Downloads\HotelManagement\HotelManagement\obj\Debug\HotelManagement.exe
+C:\Users\Admin\Downloads\HotelManagement\HotelManagement\obj\Debug\HotelManagement.pdb
+C:\fit23-hk2\WINDOW\Project\HotelSystem\HotelManagement\bin\Debug\HotelManagement.exe.config
+C:\fit23-hk2\WINDOW\Project\HotelSystem\HotelManagement\bin\Debug\HotelManagement.exe
+C:\fit23-hk2\WINDOW\Project\HotelSystem\HotelManagement\bin\Debug\HotelManagement.pdb
+C:\fit23-hk2\WINDOW\Project\HotelSystem\HotelManagement\obj\Debug\HotelManagement.csproj.AssemblyReference.cache
+C:\fit23-hk2\WINDOW\Project\HotelSystem\HotelManagement\obj\Debug\HotelManagement.AddEmployee.resources
+C:\fit23-hk2\WINDOW\Project\HotelSystem\HotelManagement\obj\Debug\HotelManagement.Login_Form.resources
+C:\fit23-hk2\WINDOW\Project\HotelSystem\HotelManagement\obj\Debug\HotelManagement.MainForm.resources
+C:\fit23-hk2\WINDOW\Project\HotelSystem\HotelManagement\obj\Debug\HotelManagement.Properties.Resources.resources
+C:\fit23-hk2\WINDOW\Project\HotelSystem\HotelManagement\obj\Debug\HotelManagement.UpdateEmployeeForm.resources
+C:\fit23-hk2\WINDOW\Project\HotelSystem\HotelManagement\obj\Debug\HotelManagement.csproj.GenerateResource.cache
+C:\fit23-hk2\WINDOW\Project\HotelSystem\HotelManagement\obj\Debug\HotelManagement.csproj.CoreCompileInputs.cache
+C:\fit23-hk2\WINDOW\Project\HotelSystem\HotelManagement\obj\Debug\HotelManagement.exe
+C:\fit23-hk2\WINDOW\Project\HotelSystem\HotelManagement\obj\Debug\HotelManagement.pdb
+C:\fit23-hk2\WINDOW\Project\HotelSystem\HotelManagement\obj\Debug\HotelManagement.CustomerForm.resources
+C:\Users\22110\Source\Repos\DangDuyy\HotelManagementSystem\HotelManagement\bin\Debug\HotelManagement.exe.config
+C:\Users\22110\Source\Repos\DangDuyy\HotelManagementSystem\HotelManagement\bin\Debug\HotelManagement.exe
+C:\Users\22110\Source\Repos\DangDuyy\HotelManagementSystem\HotelManagement\bin\Debug\HotelManagement.pdb
+C:\Users\22110\Source\Repos\DangDuyy\HotelManagementSystem\HotelManagement\obj\Debug\HotelManagement.csproj.AssemblyReference.cache
+C:\Users\22110\Source\Repos\DangDuyy\HotelManagementSystem\HotelManagement\obj\Debug\HotelManagement.AddEmployee.resources
+C:\Users\22110\Source\Repos\DangDuyy\HotelManagementSystem\HotelManagement\obj\Debug\HotelManagement.CustomerForm.resources
+C:\Users\22110\Source\Repos\DangDuyy\HotelManagementSystem\HotelManagement\obj\Debug\HotelManagement.Login_Form.resources
+C:\Users\22110\Source\Repos\DangDuyy\HotelManagementSystem\HotelManagement\obj\Debug\HotelManagement.MainForm.resources
+C:\Users\22110\Source\Repos\DangDuyy\HotelManagementSystem\HotelManagement\obj\Debug\HotelManagement.Properties.Resources.resources
+C:\Users\22110\Source\Repos\DangDuyy\HotelManagementSystem\HotelManagement\obj\Debug\HotelManagement.UpdateEmployeeForm.resources
+C:\Users\22110\Source\Repos\DangDuyy\HotelManagementSystem\HotelManagement\obj\Debug\HotelManagement.csproj.GenerateResource.cache
+C:\Users\22110\Source\Repos\DangDuyy\HotelManagementSystem\HotelManagement\obj\Debug\HotelManagement.csproj.CoreCompileInputs.cache
+C:\Users\22110\Source\Repos\DangDuyy\HotelManagementSystem\HotelManagement\obj\Debug\HotelManagement.exe
+C:\Users\22110\Source\Repos\DangDuyy\HotelManagementSystem\HotelManagement\obj\Debug\HotelManagement.pdb
+C:\Users\22110\Source\Repos\DangDuyy\HotelManagementSystem\HotelManagement\obj\Debug\HotelManagement.EmployeeForm.resources
+C:\Users\22110\source\repos\HotelManagementSystem\HotelManagement\bin\Debug\HotelManagement.exe.config
+C:\Users\22110\source\repos\HotelManagementSystem\HotelManagement\bin\Debug\HotelManagement.exe
+C:\Users\22110\source\repos\HotelManagementSystem\HotelManagement\bin\Debug\HotelManagement.pdb
+C:\Users\22110\source\repos\HotelManagementSystem\HotelManagement\obj\Debug\HotelManagement.csproj.AssemblyReference.cache
+C:\Users\22110\source\repos\HotelManagementSystem\HotelManagement\obj\Debug\HotelManagement.AddEmployee.resources
+C:\Users\22110\source\repos\HotelManagementSystem\HotelManagement\obj\Debug\HotelManagement.Login_Form.resources
+C:\Users\22110\source\repos\HotelManagementSystem\HotelManagement\obj\Debug\HotelManagement.MainForm.resources
+C:\Users\22110\source\repos\HotelManagementSystem\HotelManagement\obj\Debug\HotelManagement.Properties.Resources.resources
+C:\Users\22110\source\repos\HotelManagementSystem\HotelManagement\obj\Debug\HotelManagement.UpdateEmployeeForm.resources
+C:\Users\22110\source\repos\HotelManagementSystem\HotelManagement\obj\Debug\HotelManagement.csproj.GenerateResource.cache
+C:\Users\22110\source\repos\HotelManagementSystem\HotelManagement\obj\Debug\HotelManagement.csproj.CoreCompileInputs.cache
+C:\Users\22110\source\repos\HotelManagementSystem\HotelManagement\obj\Debug\HotelManagement.exe
+C:\Users\22110\source\repos\HotelManagementSystem\HotelManagement\obj\Debug\HotelManagement.pdb
+C:\Users\22110\source\repos\HotelManagementSystem\HotelManagement\obj\Debug\HotelManagement.AddRoomForm.resources
+C:\Users\22110\source\repos\HotelManagementSystem\HotelManagement\bin\Debug\Guna.UI2.dll
+C:\Users\22110\source\repos\HotelManagementSystem\HotelManagement\obj\Debug\HotelManagement.csproj.CopyComplete
+C:\Users\22110\source\repos\HotelManagementSystem\HotelManagement\obj\Debug\HotelManagement.Customer.resources
+C:\Users\22110\source\repos\HotelManagementSystem\HotelManagement\obj\Debug\HotelManagement.BookingRoom.resources
+C:\Users\22110\source\repos\HotelManagementSystem\HotelManagement\obj\Debug\HotelManagement.Discount.resources
+C:\Users\22110\source\repos\HotelManagementSystem\HotelManagement\obj\Debug\HotelManagement.AddSevice.resources
