@@ -116,7 +116,7 @@
             this.addButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
             this.addButton.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.addButton.Location = new System.Drawing.Point(1539, 812);
+            this.addButton.Location = new System.Drawing.Point(1511, 798);
             this.addButton.Margin = new System.Windows.Forms.Padding(6);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(224, 94);

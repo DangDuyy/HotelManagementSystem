@@ -13,7 +13,7 @@ namespace HotelManagement
     class Guest
     {
         MYDB mydb =new MYDB();
-        public bool insertCus(int  id, string fname, string lname, string phone, string address, string email)
+        public bool insertCus(int  id, string fname, string lname, string phone, string address,string email)
         {
          
             if (checkExist(id))
@@ -66,6 +66,52 @@ namespace HotelManagement
             {
                 return false; // Course with the given name and ID does not exist
             }
+        }
+        public bool deleteEmployee(int id)
+        {
+            SqlCommand command = new SqlCommand("DELETE FROM customer WHERE Id = @id", mydb.getConnection);
+            command.Parameters.Add("@id", SqlDbType.Int).Value = id;
+            mydb.openConnection();
+            if ((command.ExecuteNonQuery() == 1))
+            { mydb.closeConnection(); return true; }
+            else
+            {
+                mydb.closeConnection();
+                return false;
+            }
+
+        }
+        public bool updateCus(int id , string fname, string lname, string phone, string address, string email)
+        {
+            SqlCommand sqlCommand = new SqlCommand("Update customer SET address = @address, fname=@fname, lname=@lname, phone=@phone, email =@email where Id = @id", mydb.getConnection);
+            sqlCommand.Parameters.AddWithValue("id", id);
+            sqlCommand.Parameters.AddWithValue ("@lname", lname);
+            sqlCommand.Parameters.AddWithValue("@fname", fname);
+            sqlCommand.Parameters.AddWithValue("@phone", phone);
+            sqlCommand.Parameters.AddWithValue("@address", address);
+            sqlCommand.Parameters.AddWithValue("@email", email);
+            mydb.openConnection();
+            if ((sqlCommand.ExecuteNonQuery() == 1))
+            {
+                mydb.closeConnection();
+                return true;
+            }
+            else
+            {
+                mydb.closeConnection();
+                MessageBox.Show("Error", "Update Customer", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+        }
+        private bool isEmployeeIdExists(int id)
+        {
+            SqlCommand command = new SqlCommand("SELECT COUNT(*) FROM customer WHERE Id = @id", mydb.getConnection);
+            command.Parameters.Add("@id", SqlDbType.Int).Value = id;
+            mydb.openConnection();
+            int count = (int)command.ExecuteScalar();
+            mydb.closeConnection();
+
+            return count > 0;
         }
     }
 }

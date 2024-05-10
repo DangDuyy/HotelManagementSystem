@@ -256,22 +256,27 @@ namespace HotelManagement
 
             txt_Phone.Text = employeeTable.CurrentRow.Cells[6].Value.ToString();
             txt_Address.Text = employeeTable.CurrentRow.Cells[7].Value.ToString();
-            //txt_Email.Text = DemployeeTable2.CurrentRow.Cells[8].Value.ToString();
+            txt_email.Text = employeeTable.CurrentRow.Cells[9].Value.ToString();
 
             byte[] pic;
             if (employeeTable.CurrentRow.Cells[7].Value != DBNull.Value)
             {
-                pic = (byte[])employeeTable.CurrentRow.Cells[8].Value;
                 try
                 {
-                    MemoryStream picture = new MemoryStream(pic);
-                    pic_Employee.Image = Image.FromStream(picture);
+                    if (employeeTable.CurrentRow.Cells[8].Value != DBNull.Value)
+                    {
+                        pic = (byte[])employeeTable.CurrentRow.Cells[8].Value;
+                        MemoryStream picture = new MemoryStream(pic);
+                        pic_Employee.Image = Image.FromStream(picture);
+                    }
+                    else
+                    {
+                        pic_Employee.Image = null;
+                    }
                 }
-                catch (ArgumentException ex)
+                catch (InvalidCastException)
                 {
-                    // Xử lý lỗi hoặc thông báo người dùng nếu không thể tạo hình ảnh
-                    MessageBox.Show("Không thể tạo hình ảnh từ dữ liệu.");
-                    // Xóa hình ảnh hiển thị trên PictureBox
+                    MessageBox.Show("The data in the cell cannot be converted to a byte array.");
                     pic_Employee.Image = null;
                 }
             }
@@ -291,6 +296,23 @@ namespace HotelManagement
                 numberString += random.Next(10).ToString();
             }
             txt_EmployeeID.Text = numberString;
+        }
+
+        private void deleteButton_Click(object sender, EventArgs e)
+        {
+            if(txt_EmployeeID ==  null)
+            {
+                MessageBox.Show("No data");
+                return;
+            }
+            else
+            {
+                int id = Convert.ToInt32(txt_EmployeeID.Text);
+                employy.deleteEmployee(id);
+                MessageBox.Show("deleted succesfull");
+                refresh();
+            }
+            
         }
     }
 }

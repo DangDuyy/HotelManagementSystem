@@ -76,6 +76,11 @@ namespace HotelManagement
 
         private void updateButton_Click(object sender, EventArgs e)
         {
+            if(txt_roomid.Text == "")
+            {
+                MessageBox.Show("No Data. Please enter");
+                return;
+            }
             int id = Convert.ToInt32(txt_roomid);
             string roomtype = txt_RoomType.Text;
             string beb = txt_BebType.Text;
@@ -108,6 +113,48 @@ namespace HotelManagement
                 numberString += random.Next(10).ToString();
             }
             txt_roomid.Text = numberString;
+        }
+
+        private void clearButton_Click(object sender, EventArgs e)
+        {
+            txt_roomid.Text = string.Empty;
+            txt_RoomType.Text = string.Empty;
+            txt_BebType.Text = string.Empty;
+            txt_price.Text = string.Empty;
+        }
+
+        private void roomTable_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txt_roomid.Text = roomTable.CurrentRow.Cells[0].Value.ToString();
+            txt_RoomType.Text = roomTable.CurrentRow.Cells[1].Value.ToString();
+            txt_BebType.Text = roomTable.CurrentRow.Cells[2].Value.ToString();
+            txt_price.Text = roomTable.CurrentRow.Cells[3].Value.ToString();
+        }
+
+        private void deleteButton_Click(object sender, EventArgs e)
+        {
+            if(txt_roomid.Text == string.Empty)
+            {
+                MessageBox.Show("No data");
+                return ;
+            }
+   
+            int id = Convert.ToInt32(txt_roomid.Text);
+            if (room.checkExistRomm(id))
+            {
+                if (room.roomDeleted(id))
+                {
+                    MessageBox.Show("DELETED SUCCESSFUL");
+                    refresh();
+                }
+                else {
+                    MessageBox.Show("Error");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Error");
+            }
         }
     }
 }

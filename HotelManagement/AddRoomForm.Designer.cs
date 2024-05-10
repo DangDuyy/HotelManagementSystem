@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddRoomForm));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2CircleButton2 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.clearButton = new Guna.UI2.WinForms.Guna2Button();
             this.updateButton = new Guna.UI2.WinForms.Guna2Button();
@@ -51,13 +51,13 @@
             this.quanLyKhachSanDataSet2 = new HotelManagement.QuanLyKhachSanDataSet2();
             this.roomBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.roomTableAdapter = new HotelManagement.QuanLyKhachSanDataSet2TableAdapters.roomTableAdapter();
-            this.roomTable = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.roomtypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bebtypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2CircleButton3 = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bebtypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.roomtypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.roomTable = new Guna.UI2.WinForms.Guna2DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyKhachSanDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.roomBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.roomTable)).BeginInit();
@@ -92,6 +92,7 @@
             this.clearButton.Size = new System.Drawing.Size(166, 71);
             this.clearButton.TabIndex = 125;
             this.clearButton.Text = "CLEAR";
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // updateButton
             // 
@@ -123,6 +124,7 @@
             this.deleteButton.Size = new System.Drawing.Size(166, 71);
             this.deleteButton.TabIndex = 123;
             this.deleteButton.Text = "DELETE";
+            this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
             // 
             // addButton
             // 
@@ -214,7 +216,7 @@
             this.guna2CircleButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
             this.guna2CircleButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CircleButton1.Image")));
-            this.guna2CircleButton1.Location = new System.Drawing.Point(1041, 50);
+            this.guna2CircleButton1.Location = new System.Drawing.Point(1051, 32);
             this.guna2CircleButton1.Margin = new System.Windows.Forms.Padding(6);
             this.guna2CircleButton1.Name = "guna2CircleButton1";
             this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -240,7 +242,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cooper Black", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
-            this.label1.Location = new System.Drawing.Point(153, 72);
+            this.label1.Location = new System.Drawing.Point(46, 44);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(321, 55);
@@ -316,19 +318,74 @@
             // 
             this.roomTableAdapter.ClearBeforeFill = true;
             // 
+            // guna2CircleButton3
+            // 
+            this.guna2CircleButton3.BorderThickness = 2;
+            this.guna2CircleButton3.FillColor = System.Drawing.Color.Transparent;
+            this.guna2CircleButton3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2CircleButton3.ForeColor = System.Drawing.Color.White;
+            this.guna2CircleButton3.Image = ((System.Drawing.Image)(resources.GetObject("guna2CircleButton3.Image")));
+            this.guna2CircleButton3.Location = new System.Drawing.Point(1659, 196);
+            this.guna2CircleButton3.Margin = new System.Windows.Forms.Padding(6);
+            this.guna2CircleButton3.Name = "guna2CircleButton3";
+            this.guna2CircleButton3.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CircleButton3.Size = new System.Drawing.Size(63, 42);
+            this.guna2CircleButton3.TabIndex = 151;
+            this.guna2CircleButton3.Click += new System.EventHandler(this.guna2CircleButton3_Click);
+            // 
+            // statusDataGridViewTextBoxColumn
+            // 
+            this.statusDataGridViewTextBoxColumn.DataPropertyName = "status";
+            this.statusDataGridViewTextBoxColumn.HeaderText = "status";
+            this.statusDataGridViewTextBoxColumn.MinimumWidth = 10;
+            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
+            this.statusDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // priceDataGridViewTextBoxColumn
+            // 
+            this.priceDataGridViewTextBoxColumn.DataPropertyName = "price";
+            this.priceDataGridViewTextBoxColumn.HeaderText = "price";
+            this.priceDataGridViewTextBoxColumn.MinimumWidth = 10;
+            this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
+            this.priceDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // bebtypeDataGridViewTextBoxColumn
+            // 
+            this.bebtypeDataGridViewTextBoxColumn.DataPropertyName = "bebtype";
+            this.bebtypeDataGridViewTextBoxColumn.HeaderText = "bebtype";
+            this.bebtypeDataGridViewTextBoxColumn.MinimumWidth = 10;
+            this.bebtypeDataGridViewTextBoxColumn.Name = "bebtypeDataGridViewTextBoxColumn";
+            this.bebtypeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // roomtypeDataGridViewTextBoxColumn
+            // 
+            this.roomtypeDataGridViewTextBoxColumn.DataPropertyName = "roomtype";
+            this.roomtypeDataGridViewTextBoxColumn.HeaderText = "roomtype";
+            this.roomtypeDataGridViewTextBoxColumn.MinimumWidth = 10;
+            this.roomtypeDataGridViewTextBoxColumn.Name = "roomtypeDataGridViewTextBoxColumn";
+            this.roomtypeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "id";
+            this.idDataGridViewTextBoxColumn.MinimumWidth = 10;
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
             // roomTable
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.roomTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.roomTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.roomTable.AutoGenerateColumns = false;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.roomTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.roomTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.roomTable.ColumnHeadersHeight = 40;
             this.roomTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.roomTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -338,23 +395,23 @@
             this.priceDataGridViewTextBoxColumn,
             this.statusDataGridViewTextBoxColumn});
             this.roomTable.DataSource = this.roomBindingSource;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.roomTable.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.roomTable.DefaultCellStyle = dataGridViewCellStyle3;
             this.roomTable.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.roomTable.Location = new System.Drawing.Point(69, 180);
+            this.roomTable.Location = new System.Drawing.Point(44, 134);
             this.roomTable.Margin = new System.Windows.Forms.Padding(6);
             this.roomTable.Name = "roomTable";
             this.roomTable.ReadOnly = true;
             this.roomTable.RowHeadersVisible = false;
             this.roomTable.RowHeadersWidth = 82;
             this.roomTable.RowTemplate.Height = 35;
-            this.roomTable.Size = new System.Drawing.Size(1070, 680);
+            this.roomTable.Size = new System.Drawing.Size(1115, 680);
             this.roomTable.TabIndex = 135;
             this.roomTable.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.roomTable.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -377,61 +434,7 @@
             this.roomTable.ThemeStyle.RowsStyle.Height = 35;
             this.roomTable.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.roomTable.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "id";
-            this.idDataGridViewTextBoxColumn.MinimumWidth = 10;
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // roomtypeDataGridViewTextBoxColumn
-            // 
-            this.roomtypeDataGridViewTextBoxColumn.DataPropertyName = "roomtype";
-            this.roomtypeDataGridViewTextBoxColumn.HeaderText = "roomtype";
-            this.roomtypeDataGridViewTextBoxColumn.MinimumWidth = 10;
-            this.roomtypeDataGridViewTextBoxColumn.Name = "roomtypeDataGridViewTextBoxColumn";
-            this.roomtypeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // bebtypeDataGridViewTextBoxColumn
-            // 
-            this.bebtypeDataGridViewTextBoxColumn.DataPropertyName = "bebtype";
-            this.bebtypeDataGridViewTextBoxColumn.HeaderText = "bebtype";
-            this.bebtypeDataGridViewTextBoxColumn.MinimumWidth = 10;
-            this.bebtypeDataGridViewTextBoxColumn.Name = "bebtypeDataGridViewTextBoxColumn";
-            this.bebtypeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // priceDataGridViewTextBoxColumn
-            // 
-            this.priceDataGridViewTextBoxColumn.DataPropertyName = "price";
-            this.priceDataGridViewTextBoxColumn.HeaderText = "price";
-            this.priceDataGridViewTextBoxColumn.MinimumWidth = 10;
-            this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
-            this.priceDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // statusDataGridViewTextBoxColumn
-            // 
-            this.statusDataGridViewTextBoxColumn.DataPropertyName = "status";
-            this.statusDataGridViewTextBoxColumn.HeaderText = "status";
-            this.statusDataGridViewTextBoxColumn.MinimumWidth = 10;
-            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
-            this.statusDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // guna2CircleButton3
-            // 
-            this.guna2CircleButton3.BorderThickness = 2;
-            this.guna2CircleButton3.FillColor = System.Drawing.Color.Transparent;
-            this.guna2CircleButton3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2CircleButton3.ForeColor = System.Drawing.Color.White;
-            this.guna2CircleButton3.Image = ((System.Drawing.Image)(resources.GetObject("guna2CircleButton3.Image")));
-            this.guna2CircleButton3.Location = new System.Drawing.Point(1659, 196);
-            this.guna2CircleButton3.Margin = new System.Windows.Forms.Padding(6);
-            this.guna2CircleButton3.Name = "guna2CircleButton3";
-            this.guna2CircleButton3.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CircleButton3.Size = new System.Drawing.Size(63, 42);
-            this.guna2CircleButton3.TabIndex = 151;
-            this.guna2CircleButton3.Click += new System.EventHandler(this.guna2CircleButton3_Click);
+            this.roomTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.roomTable_CellContentClick);
             // 
             // AddRoomForm
             // 
@@ -486,12 +489,12 @@
         private QuanLyKhachSanDataSet2 quanLyKhachSanDataSet2;
         private System.Windows.Forms.BindingSource roomBindingSource;
         private QuanLyKhachSanDataSet2TableAdapters.roomTableAdapter roomTableAdapter;
-        private Guna.UI2.WinForms.Guna2DataGridView roomTable;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn roomtypeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn bebtypeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn;
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn bebtypeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn roomtypeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private Guna.UI2.WinForms.Guna2DataGridView roomTable;
     }
 }

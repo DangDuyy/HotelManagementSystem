@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EmguCV.3.1.0.1\build\EmguCV.props" Condition="Exists('..\packages\EmguCV.3.1.0.1\build\EmguCV.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -12,6 +13,8 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,8 +36,30 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Emgu.CV.UI, Version=3.1.0.2282, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <HintPath>..\packages\EmguCV.3.1.0.1\lib\net30\Emgu.CV.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Emgu.CV.UI.GL, Version=3.1.0.2282, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <HintPath>..\packages\EmguCV.3.1.0.1\lib\net30\Emgu.CV.UI.GL.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Emgu.CV.World, Version=3.1.0.2282, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <HintPath>..\packages\EmguCV.3.1.0.1\lib\net30\Emgu.CV.World.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FaceRecognition, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\FaceRecognition.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK, Version=1.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenTK.1.1.2225.0\lib\net20\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK.GLControl, Version=1.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenTK.GLControl.1.1.2225.0\lib\net20\OpenTK.GLControl.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -50,8 +75,17 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph, Version=5.1.5.28844, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZedGraph.5.1.5\lib\ZedGraph.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="account.Designer.cs">
+      <DependentUpon>account.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,11 +104,29 @@
     <Compile Include="AddSevice.Designer.cs">
       <DependentUpon>AddSevice.cs</DependentUpon>
     </Compile>
+    <Compile Include="AssigmentForQLvaNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssigmentForQLvaNV.Designer.cs">
+      <DependentUpon>AssigmentForQLvaNV.cs</DependentUpon>
+    </Compile>
     <Compile Include="BookingRoom.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="BookingRoom.Designer.cs">
       <DependentUpon>BookingRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckIn.Designer.cs">
+      <DependentUpon>CheckIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateAccount.Designer.cs">
+      <DependentUpon>CreateAccount.cs</DependentUpon>
     </Compile>
     <Compile Include="Customer.cs">
       <SubType>Form</SubType>
@@ -82,13 +134,43 @@
     <Compile Include="Customer.Designer.cs">
       <DependentUpon>Customer.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataTimeKeeping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataTimeKeeping.Designer.cs">
+      <DependentUpon>DataTimeKeeping.cs</DependentUpon>
+    </Compile>
     <Compile Include="Discount.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Discount.Designer.cs">
       <DependentUpon>Discount.cs</DependentUpon>
     </Compile>
+    <Compile Include="DITMEMAY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DITMEMAY.Designer.cs">
+      <DependentUpon>DITMEMAY.cs</DependentUpon>
+    </Compile>
     <Compile Include="Employee.cs" />
+    <Compile Include="FaceRecognition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FaceRecognition.Designer.cs">
+      <DependentUpon>FaceRecognition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotAccount.Designer.cs">
+      <DependentUpon>ForgotAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Guest.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -103,6 +185,12 @@
       <DependentUpon>Login_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="MYDB.cs" />
+    <Compile Include="NhapCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhapCode.Designer.cs">
+      <DependentUpon>NhapCode.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuanLyKhachSanDataSet.Designer.cs">
@@ -114,6 +202,51 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>QuanLyKhachSanDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyKhachSanDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyKhachSanDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyKhachSanDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyKhachSanDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyKhachSanDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyKhachSanDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyKhachSanDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyKhachSanDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyKhachSanDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyKhachSanDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyKhachSanDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyKhachSanDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyKhachSanDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyKhachSanDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyKhachSanDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyKhachSanDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyKhachSanDataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyKhachSanDataSet18.xsd</DependentUpon>
     </Compile>
     <Compile Include="QuanLyKhachSanDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -155,13 +288,41 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QuanLyKhachSanDataSet9.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ResetPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResetPass.Designer.cs">
+      <DependentUpon>ResetPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RevenueReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RevenueReport.Designer.cs">
+      <DependentUpon>RevenueReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Room.cs" />
+    <Compile Include="store.cs" />
+    <Compile Include="StoreManagent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StoreManagent.Designer.cs">
+      <DependentUpon>StoreManagent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimeKeeping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimeKeeping.Designer.cs">
+      <DependentUpon>TimeKeeping.cs</DependentUpon>
+    </Compile>
     <Compile Include="UpdateEmployeeForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UpdateEmployeeForm.Designer.cs">
       <DependentUpon>UpdateEmployeeForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="account.resx">
+      <DependentUpon>account.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddEmployee.resx">
       <DependentUpon>AddEmployee.cs</DependentUpon>
     </EmbeddedResource>
@@ -171,20 +332,47 @@
     <EmbeddedResource Include="AddSevice.resx">
       <DependentUpon>AddSevice.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AssigmentForQLvaNV.resx">
+      <DependentUpon>AssigmentForQLvaNV.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BookingRoom.resx">
       <DependentUpon>BookingRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckIn.resx">
+      <DependentUpon>CheckIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateAccount.resx">
+      <DependentUpon>CreateAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Customer.resx">
       <DependentUpon>Customer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DataTimeKeeping.resx">
+      <DependentUpon>DataTimeKeeping.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Discount.resx">
       <DependentUpon>Discount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DITMEMAY.resx">
+      <DependentUpon>DITMEMAY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FaceRecognition.resx">
+      <DependentUpon>FaceRecognition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgotAccount.resx">
+      <DependentUpon>ForgotAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login_Form.resx">
       <DependentUpon>Login_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhapCode.resx">
+      <DependentUpon>NhapCode.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -196,9 +384,22 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ResetPass.resx">
+      <DependentUpon>ResetPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RevenueReport.resx">
+      <DependentUpon>RevenueReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StoreManagent.resx">
+      <DependentUpon>StoreManagent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeKeeping.resx">
+      <DependentUpon>TimeKeeping.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UpdateEmployeeForm.resx">
       <DependentUpon>UpdateEmployeeForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="OpenTK.dll.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -235,6 +436,105 @@
     </None>
     <None Include="QuanLyKhachSanDataSet1.xss">
       <DependentUpon>QuanLyKhachSanDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyKhachSanDataSet10.xsc">
+      <DependentUpon>QuanLyKhachSanDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyKhachSanDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyKhachSanDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyKhachSanDataSet10.xss">
+      <DependentUpon>QuanLyKhachSanDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyKhachSanDataSet11.xsc">
+      <DependentUpon>QuanLyKhachSanDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyKhachSanDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyKhachSanDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyKhachSanDataSet11.xss">
+      <DependentUpon>QuanLyKhachSanDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyKhachSanDataSet12.xsc">
+      <DependentUpon>QuanLyKhachSanDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyKhachSanDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyKhachSanDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyKhachSanDataSet12.xss">
+      <DependentUpon>QuanLyKhachSanDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyKhachSanDataSet13.xsc">
+      <DependentUpon>QuanLyKhachSanDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyKhachSanDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyKhachSanDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyKhachSanDataSet13.xss">
+      <DependentUpon>QuanLyKhachSanDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyKhachSanDataSet14.xsc">
+      <DependentUpon>QuanLyKhachSanDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyKhachSanDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyKhachSanDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyKhachSanDataSet14.xss">
+      <DependentUpon>QuanLyKhachSanDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyKhachSanDataSet15.xsc">
+      <DependentUpon>QuanLyKhachSanDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyKhachSanDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyKhachSanDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyKhachSanDataSet15.xss">
+      <DependentUpon>QuanLyKhachSanDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyKhachSanDataSet16.xsc">
+      <DependentUpon>QuanLyKhachSanDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyKhachSanDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyKhachSanDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyKhachSanDataSet16.xss">
+      <DependentUpon>QuanLyKhachSanDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyKhachSanDataSet17.xsc">
+      <DependentUpon>QuanLyKhachSanDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyKhachSanDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyKhachSanDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyKhachSanDataSet17.xss">
+      <DependentUpon>QuanLyKhachSanDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyKhachSanDataSet18.xsc">
+      <DependentUpon>QuanLyKhachSanDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyKhachSanDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyKhachSanDataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyKhachSanDataSet18.xss">
+      <DependentUpon>QuanLyKhachSanDataSet18.xsd</DependentUpon>
     </None>
     <None Include="QuanLyKhachSanDataSet2.xsc">
       <DependentUpon>QuanLyKhachSanDataSet2.xsd</DependentUpon>
@@ -392,5 +692,49 @@
   <ItemGroup>
     <None Include="Resources\258768692_5086046671424593_4224393960284543308_n5.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\store.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer-service.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\discount.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6208458.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13271548.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timekeeping.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schedule.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assign.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EmguCV.3.1.0.1\build\EmguCV.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EmguCV.3.1.0.1\build\EmguCV.props'))" />
+    <Error Condition="!Exists('..\packages\EmguCV.3.1.0.1\build\EmguCV.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EmguCV.3.1.0.1\build\EmguCV.targets'))" />
+  </Target>
+  <Import Project="..\packages\EmguCV.3.1.0.1\build\EmguCV.targets" Condition="Exists('..\packages\EmguCV.3.1.0.1\build\EmguCV.targets')" />
 </Project>

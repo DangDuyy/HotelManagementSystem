@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,7 +18,8 @@ namespace HotelManagement
         {
             InitializeComponent();
         }
-
+        public static string infoLogin;
+        
         private void pictureBoxMinimize_MouseHover(object sender, EventArgs e)
         {
             toolTip1.SetToolTip(pictureBoxMinimize, "Minimize");
@@ -64,22 +66,23 @@ namespace HotelManagement
         private void btn_Login_Click(object sender, EventArgs e)
         {
             MYDB db = new MYDB();
-
+   
+            //MessageBox.Show(s);
             SqlDataAdapter adapter = new SqlDataAdapter();
 
             DataTable table = new DataTable();
 
-            SqlCommand command = new SqlCommand("SELECT * FROM log_in WHERE username = @User AND password = @Pass", db.getConnection);
+            SqlCommand command = new SqlCommand("SELECT * FROM std WHERE username = @User AND password = @Pass", db.getConnection);
 
             command.Parameters.Add("@User", SqlDbType.VarChar).Value = txt_Username.Text;
             command.Parameters.Add("@Pass", SqlDbType.VarChar).Value = Txt_Password.Text;
-
             adapter.SelectCommand = command;
 
             adapter.Fill(table);
 
             if ((table.Rows.Count > 0))
             {
+                infoLogin = txt_Username.Text;
                 //MessageBox.Show("Ok, next time will be go to Main Menu of App");
                 this.DialogResult = DialogResult.OK;
             }
@@ -90,7 +93,7 @@ namespace HotelManagement
         }
         private void LOGIN_Enter(object sender, EventArgs e)
         {
-            Txt_Password.UseSystemPasswordChar = true;
+            //Txt_Password.UseSystemPasswordChar = true;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -101,6 +104,18 @@ namespace HotelManagement
         private void guna2Button2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label_Forgetpass_Click(object sender, EventArgs e)
+        {
+            ForgotAccount account = new ForgotAccount();
+            account.Show(this);
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            CreateAccount createAccount = new CreateAccount();
+            createAccount.Show(this);
         }
     }
 }

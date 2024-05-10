@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Customer));
             this.guestTable = new Guna.UI2.WinForms.Guna2DataGridView();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,8 +50,6 @@
             this.label12 = new System.Windows.Forms.Label();
             this.txt_phone = new Guna.UI2.WinForms.Guna2TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txt_email = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.txt_lName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_fName = new Guna.UI2.WinForms.Guna2TextBox();
@@ -62,6 +60,8 @@
             this.customerTableAdapter = new HotelManagement.QuanLyKhachSanDataSetTableAdapters.customerTableAdapter();
             this.txt_customerID = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2CircleButton2 = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.txt_email = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.guestTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyKhachSanDataSet)).BeginInit();
@@ -69,17 +69,17 @@
             // 
             // guestTable
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.guestTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.guestTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.guestTable.AutoGenerateColumns = false;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guestTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guestTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.guestTable.ColumnHeadersHeight = 40;
             this.guestTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.guestTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -90,14 +90,14 @@
             this.addressDataGridViewTextBoxColumn,
             this.emailDataGridViewTextBoxColumn});
             this.guestTable.DataSource = this.customerBindingSource;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guestTable.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guestTable.DefaultCellStyle = dataGridViewCellStyle3;
             this.guestTable.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guestTable.Location = new System.Drawing.Point(35, 140);
             this.guestTable.Margin = new System.Windows.Forms.Padding(6);
@@ -106,7 +106,7 @@
             this.guestTable.RowHeadersVisible = false;
             this.guestTable.RowHeadersWidth = 82;
             this.guestTable.RowTemplate.Height = 35;
-            this.guestTable.Size = new System.Drawing.Size(1204, 782);
+            this.guestTable.Size = new System.Drawing.Size(1204, 886);
             this.guestTable.TabIndex = 145;
             this.guestTable.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guestTable.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -197,12 +197,13 @@
             this.clearButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
             this.clearButton.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clearButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.clearButton.Location = new System.Drawing.Point(1408, 835);
+            this.clearButton.Location = new System.Drawing.Point(1413, 893);
             this.clearButton.Margin = new System.Windows.Forms.Padding(6);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(192, 87);
             this.clearButton.TabIndex = 144;
             this.clearButton.Text = "CLEAR";
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // updateButton
             // 
@@ -212,12 +213,13 @@
             this.updateButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
             this.updateButton.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updateButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.updateButton.Location = new System.Drawing.Point(1672, 733);
+            this.updateButton.Location = new System.Drawing.Point(1677, 791);
             this.updateButton.Margin = new System.Windows.Forms.Padding(6);
             this.updateButton.Name = "updateButton";
             this.updateButton.Size = new System.Drawing.Size(192, 87);
             this.updateButton.TabIndex = 143;
             this.updateButton.Text = "UPDATE";
+            this.updateButton.Click += new System.EventHandler(this.updateButton_Click);
             // 
             // deleteButton
             // 
@@ -227,12 +229,13 @@
             this.deleteButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
             this.deleteButton.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deleteButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.deleteButton.Location = new System.Drawing.Point(1672, 835);
+            this.deleteButton.Location = new System.Drawing.Point(1677, 893);
             this.deleteButton.Margin = new System.Windows.Forms.Padding(6);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(192, 87);
             this.deleteButton.TabIndex = 142;
             this.deleteButton.Text = "DELETE";
+            this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
             // 
             // addButton
             // 
@@ -242,7 +245,7 @@
             this.addButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
             this.addButton.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.addButton.Location = new System.Drawing.Point(1408, 733);
+            this.addButton.Location = new System.Drawing.Point(1413, 791);
             this.addButton.Margin = new System.Windows.Forms.Padding(6);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(192, 87);
@@ -261,7 +264,7 @@
             this.txt_address.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_address.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_address.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_address.Location = new System.Drawing.Point(1308, 531);
+            this.txt_address.Location = new System.Drawing.Point(1275, 653);
             this.txt_address.Margin = new System.Windows.Forms.Padding(8);
             this.txt_address.Name = "txt_address";
             this.txt_address.PasswordChar = '\0';
@@ -276,7 +279,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
-            this.label12.Location = new System.Drawing.Point(1302, 477);
+            this.label12.Location = new System.Drawing.Point(1269, 609);
             this.label12.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(224, 36);
@@ -315,39 +318,6 @@
             this.label5.Size = new System.Drawing.Size(285, 36);
             this.label5.TabIndex = 127;
             this.label5.Text = "Contact Number";
-            // 
-            // txt_email
-            // 
-            this.txt_email.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_email.DefaultText = "";
-            this.txt_email.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_email.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_email.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_email.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_email.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_email.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.txt_email.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_email.Location = new System.Drawing.Point(1300, 389);
-            this.txt_email.Margin = new System.Windows.Forms.Padding(8);
-            this.txt_email.Name = "txt_email";
-            this.txt_email.PasswordChar = '\0';
-            this.txt_email.PlaceholderText = "";
-            this.txt_email.SelectedText = "";
-            this.txt_email.Size = new System.Drawing.Size(242, 50);
-            this.txt_email.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txt_email.TabIndex = 126;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
-            this.label4.Location = new System.Drawing.Point(1302, 345);
-            this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(108, 36);
-            this.label4.TabIndex = 125;
-            this.label4.Text = "Email";
             // 
             // txt_lName
             // 
@@ -393,7 +363,7 @@
             this.txt_fName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_fName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_fName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_fName.Location = new System.Drawing.Point(1298, 281);
+            this.txt_fName.Location = new System.Drawing.Point(1275, 389);
             this.txt_fName.Margin = new System.Windows.Forms.Padding(8);
             this.txt_fName.Name = "txt_fName";
             this.txt_fName.PasswordChar = '\0';
@@ -408,7 +378,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
-            this.label2.Location = new System.Drawing.Point(1292, 237);
+            this.label2.Location = new System.Drawing.Point(1269, 345);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(195, 36);
@@ -420,7 +390,7 @@
             this.GuestId.AutoSize = true;
             this.GuestId.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GuestId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
-            this.GuestId.Location = new System.Drawing.Point(1292, 98);
+            this.GuestId.Location = new System.Drawing.Point(1269, 206);
             this.GuestId.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.GuestId.Name = "GuestId";
             this.GuestId.Size = new System.Drawing.Size(260, 36);
@@ -468,7 +438,7 @@
             this.txt_customerID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_customerID.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_customerID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_customerID.Location = new System.Drawing.Point(1298, 152);
+            this.txt_customerID.Location = new System.Drawing.Point(1275, 260);
             this.txt_customerID.Margin = new System.Windows.Forms.Padding(8);
             this.txt_customerID.Name = "txt_customerID";
             this.txt_customerID.PasswordChar = '\0';
@@ -485,7 +455,7 @@
             this.guna2CircleButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2CircleButton2.ForeColor = System.Drawing.Color.White;
             this.guna2CircleButton2.Image = ((System.Drawing.Image)(resources.GetObject("guna2CircleButton2.Image")));
-            this.guna2CircleButton2.Location = new System.Drawing.Point(1591, 129);
+            this.guna2CircleButton2.Location = new System.Drawing.Point(1559, 237);
             this.guna2CircleButton2.Margin = new System.Windows.Forms.Padding(6);
             this.guna2CircleButton2.Name = "guna2CircleButton2";
             this.guna2CircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -493,11 +463,46 @@
             this.guna2CircleButton2.TabIndex = 151;
             this.guna2CircleButton2.Click += new System.EventHandler(this.guna2CircleButton2_Click);
             // 
+            // txt_email
+            // 
+            this.txt_email.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_email.DefaultText = "";
+            this.txt_email.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_email.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_email.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_email.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_email.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_email.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_email.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_email.Location = new System.Drawing.Point(1275, 520);
+            this.txt_email.Margin = new System.Windows.Forms.Padding(8);
+            this.txt_email.Name = "txt_email";
+            this.txt_email.PasswordChar = '\0';
+            this.txt_email.PlaceholderText = "";
+            this.txt_email.SelectedText = "";
+            this.txt_email.Size = new System.Drawing.Size(646, 62);
+            this.txt_email.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txt_email.TabIndex = 153;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
+            this.label4.Location = new System.Drawing.Point(1269, 476);
+            this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(108, 36);
+            this.label4.TabIndex = 152;
+            this.label4.Text = "Email";
+            // 
             // Customer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2462, 1269);
+            this.Controls.Add(this.txt_email);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.guna2CircleButton2);
             this.Controls.Add(this.txt_customerID);
             this.Controls.Add(this.guestTable);
@@ -509,8 +514,6 @@
             this.Controls.Add(this.label12);
             this.Controls.Add(this.txt_phone);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txt_email);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.txt_lName);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txt_fName);
@@ -541,8 +544,6 @@
         private System.Windows.Forms.Label label12;
         private Guna.UI2.WinForms.Guna2TextBox txt_phone;
         private System.Windows.Forms.Label label5;
-        private Guna.UI2.WinForms.Guna2TextBox txt_email;
-        private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2TextBox txt_lName;
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2TextBox txt_fName;
@@ -561,5 +562,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
         private Guna.UI2.WinForms.Guna2TextBox txt_customerID;
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton2;
+        private Guna.UI2.WinForms.Guna2TextBox txt_email;
+        private System.Windows.Forms.Label label4;
     }
 }

@@ -65,6 +65,19 @@ namespace HotelManagement
             adapter.Fill(data);
             return data;
         }
+        public bool roomDeleted(int id)
+        {
+            SqlCommand cmd = new SqlCommand("DELETE  FROM room where id = @id", mydb.getConnection);
+            cmd.Parameters.Add("@id", SqlDbType.Int).Value=id;
+            mydb.openConnection();
+            if ((cmd.ExecuteNonQuery() == 1))
+            { mydb.closeConnection(); return true; }
+            else
+            {
+                mydb.closeConnection();
+                return false;
+            }
+        }
         public bool updateRoom(int id, string roomtype, string bebtype, int price)
         {
             SqlCommand command = new SqlCommand("UPDATE room SET roomtype = @roomtype, bebtype = @bebtype, price = @price WHERE id=@ID", mydb.getConnection);

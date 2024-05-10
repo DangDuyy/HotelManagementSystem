@@ -58,7 +58,6 @@
             this.clearButton = new Guna.UI2.WinForms.Guna2Button();
             this.updateButton = new Guna.UI2.WinForms.Guna2Button();
             this.deleteButton = new Guna.UI2.WinForms.Guna2Button();
-            this.addButton = new Guna.UI2.WinForms.Guna2Button();
             this.employeeTable = new Guna.UI2.WinForms.Guna2DataGridView();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -374,7 +373,7 @@
             this.updateButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
             this.updateButton.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updateButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.updateButton.Location = new System.Drawing.Point(1677, 984);
+            this.updateButton.Location = new System.Drawing.Point(1550, 946);
             this.updateButton.Margin = new System.Windows.Forms.Padding(6);
             this.updateButton.Name = "updateButton";
             this.updateButton.Size = new System.Drawing.Size(214, 94);
@@ -396,22 +395,7 @@
             this.deleteButton.Size = new System.Drawing.Size(214, 94);
             this.deleteButton.TabIndex = 128;
             this.deleteButton.Text = "DELETE";
-            // 
-            // addButton
-            // 
-            this.addButton.BackColor = System.Drawing.Color.Transparent;
-            this.addButton.BorderRadius = 20;
-            this.addButton.BorderThickness = 1;
-            this.addButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
-            this.addButton.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.addButton.Location = new System.Drawing.Point(1425, 984);
-            this.addButton.Margin = new System.Windows.Forms.Padding(6);
-            this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(224, 94);
-            this.addButton.TabIndex = 127;
-            this.addButton.Text = "ADD";
-            this.addButton.Click += new System.EventHandler(this.addButton_Click);
+            this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
             // 
             // employeeTable
             // 
@@ -640,7 +624,6 @@
             this.Controls.Add(this.clearButton);
             this.Controls.Add(this.updateButton);
             this.Controls.Add(this.deleteButton);
-            this.Controls.Add(this.addButton);
             this.Controls.Add(this.pic_Employee);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label11);
@@ -702,7 +685,6 @@
         private Guna.UI2.WinForms.Guna2Button clearButton;
         private Guna.UI2.WinForms.Guna2Button updateButton;
         private Guna.UI2.WinForms.Guna2Button deleteButton;
-        private Guna.UI2.WinForms.Guna2Button addButton;
         private Guna.UI2.WinForms.Guna2DataGridView employeeTable;
         private QuanLyKhachSanDataSet8 quanLyKhachSanDataSet8;
         private System.Windows.Forms.BindingSource stdBindingSource;
